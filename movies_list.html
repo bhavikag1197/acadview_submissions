@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <link href="style.css" rel="stylesheet" />
+      <style>
+          a:any-link{
+          a:any-link{
+              text-decoration: none;
+              text-decoration-color: black;
+          }      
+      </style>
+    <title>Working with JavaScript DOM</title>
+  </head>
+  <body>
+  	<div id="wrapper">
+	    <header>
+	    	<div id="page-banner">
+	    		<h1 class="title">Moviemania</h1>
+          <p>Movies for everyone</p>
+          <form id="search-movies">
+            <input type="text" placeholder="Search movies..." id="s" onblur="srchFunc()"/>
+              <center><button type="submit" name="submit" value="submit">Seacrh</button></center>
+          </form>
+	    	</div>
+	    </header>
+	    <div id="movie-list">
+	    	<h2 class="title">Movies to watch</h2>
+	    	<ul id="myUL">
+	    		<li>
+                    <span class="name"><a href="#">Fight Club</a></span>
+	    			<span class="delete">delete</span>
+	    		</li>
+	    		<li>
+                    <span class="name"><a href="#">Shawshank Redemption</a></span>
+	    			<span class="delete">delete</span>
+	    		</li>
+	    		<li>
+                    <span class="name"><a href="#">Secret life of Walter Mitty</a></span>
+	    			<span class="delete">delete</span>
+	    		</li>
+	    		<li>
+                    <span class="name"><a href="#">Dark Knight</a></span>
+	    			<span class="delete">delete</span>
+	    		</li>
+	    	</ul>
+	    </div>
+	    <form id="add-movie">
+        <input type="checkbox" id="hide" />
+				<label for="hide"> Hide the List </label>
+				<input type="text" placeholder="Add a movie..." id="add"/>
+	    	<button>Add</button>
+	    </form>
+      <div id="tabbed-content">
+        <ul class="tabs">
+          <li data-target="#about" class="active">About</li>
+          <li data-target="#contact">Contact</li>
+        </ul>
+        <div class="panel active" id="about">
+          <p>Content for about tab...</p>
+          <p>This is an application for creating a person's movies list</p>
+        </div>
+        <div class="panel" id="contact">
+          <p>Content for contact tab...</p>
+          <p>Contact to know more</p>
+        </div>
+      </div>
+    </div>
+    <script src="app.js"></script>
+  </body>
+</html>
